@@ -119,12 +119,10 @@ Tour service providers including private tourists and Jammu & Kashmir Tourism De
       var target = document.querySelector('.services');
       var targetTwo = document.querySelector('.header');
       document.addEventListener('scroll', () => {
-        if (window.scrollY >= target.getBoundingClientRect().top) {
-          document.querySelector('.menu-icon').style.color = 'black';
-        }
-        if (window.scrollY <= targetTwo.getBoundingClientRect().top) {
-          document.querySelector('.menu-icon').style.color = 'white';
-        }
+        if(target.getBoundingClientRect().top<40)
+          document.querySelector('.menu-icon').style.color='black'
+        else
+          document.querySelector('.menu-icon').style.color='white'
       });
     </script>
   </body>
