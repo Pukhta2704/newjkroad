@@ -160,11 +160,8 @@ nav ul li h1 {
   padding: 8px;
 }
 .phone-numbers {
-<<<<<<< HEAD
   transition: 1.5s all;
-=======
   transition: 2.5s all;
->>>>>>> development
   position: fixed;
   left: -100vw;
   opacity: 0;
