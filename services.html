@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1>NEW JK ROADWAYS</h1>
+      <ul>
+        <a href="./index.html">
+          <li><h1>Home</h1></li>
+        </a>
+        <a href="./about.html">
+          <li><h1>About Us</h1></li>
+        </a>
+        <a href="#">
+          <li><h1>Services</h1></li>
+        </a>
+        <a href="./contact.html">
+          <li><h1>Contact Us</h1></li>
+        </a>
+      </ul>
+    </nav>
+    <!start of header section!>
+    <section class="header">
+      <div class="main"></div>
+      <h1 class="media-menu">New JK Roadways</h1>
+      <div class="main-detail">
+        <h1 class="top">NEW JK ROADWAYS</h1>
+        <div class="bottom">We provide buses, trucks and light motor vehicles for hiring.</div>
+      </div>
+      <i id="bars" class="menu-icon fas fa-bars fa-3x"></i>
+    </section>
+    <! end of header sectiion!>
+    <section class="services">
+      <div class="service-item">
+        <h2>Services</h2>
+        <p>
+          <div class="">
+We let out different types of automobiles ranging from trucks to buses and light motor vehicles.
+          </div>
+          <br>
+          <div class="">
+Our clients include private individuals as well as different institutions including Government and Semi-Government for various purposes.           </div>
+          <br>
+        <div>          Over the years our expertise has enabled us to provide transportation services to: -
+          <ul >
+            <li> 
+Election Commission for every election held in J&K since 1996.
+            </li>
+            <li>
+
+Organisations and entities involved in State Security.
+            </li>
+            <li>
+Jammu and Kashmir State Road Transport Corporation.
+            </li>
+            <li>
+
+Picnics and excursions for employees of corporate entities.
+            </li>
+            <li>
+
+Business for goods and materials movement.
+            </li>
+            <li>
+Tour service providers including private tourists and Jammu & Kashmir Tourism Development Corporation.
+              </li>
+          </ul></div> 
+
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <h5>
+          ADDRESS: E-10, TRANSPORT NAGAR, PARIMPORA, SRINAGAR,
+          <p>KASHMIR ( PIN CODE - 190017 )</p>
+        </h5>
+        <h3>
+          New JK Roadways &copy; 2021
+
+          <p style="font-size: 12px">
+            Site Developed By: Imtiyaz Pukhta
+            <a
+              style="color: #341c09; border-bottom: 1px black solid"
+              href="https://pukhta2704.github.io/Portfolio/contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Developer</a
+            >
+          </p>
+        </h3>
+      </div>
+    </footer>
+    <script>
+      const menuIcon = document.getElementById('bars');
+      menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-times');
+        document.getElementById('navbar').classList.toggle('open');
+      });
+      var target = document.querySelector('.services');
+      var targetTwo = document.querySelector('.header');
+      document.addEventListener('scroll', () => {
+        if (window.scrollY >= target.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'black';
+        }
+        if (window.scrollY <= targetTwo.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'white';
+        }
+      });
+    </script>
+  </body>
+</html>

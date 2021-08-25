@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+footer {
+  width: 100vw;
+  background: rgba(25, 181, 254, 1);
+}
+.footer {
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+}
+nav {
+  height: 100vh;
+  width: 60vw;
+  background: rgba(52, 73, 94, 1);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s all;
+  align-items: center;
+}
+nav a:hover {
+  border-bottom: 1px solid whitesmoke;
+}
+.open {
+  left: 0;
+}
+nav ul {
+  height: 50%;
+  margin-top: 2rem;
+}
+nav ul li {
+  margin: 8px;
+}
+nav > h1 {
+  font-family: 'Rye', cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+nav ul li h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+.header {
+  position: relative;
+  width: 100vw;
+  margin-bottom: 2rem;
+  height: 80vh;
+}
+.header .main {
+  width: 100%;
+  height: 100%;
+  background: url('./images/cloudy-1866581_1920.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header .main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.header .main-detail {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+.header .main-detail .top {
+  padding: 3rem;
+  font-size: 3rem;
+}
+
+.header .main-detail .bottom {
+  font-size: 1.3rem;
+  text-align: start;
+  text-align: center;
+}
+.header .main-detail .bottom p {
+  margin-bottom: 0.5rem;
+}
+.media-menu {
+  font-family: 'Rye', cursive;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 100px;
+  color: white;
+  font-size: 1.8rem;
+}
+.menu-icon {
+  color: white;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 2;
+}
+.location {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: whitesmoke;
+  margin: auto;
+  padding: 2rem;
+  border: 2px grey solid;
+  border-radius: 30px;
+}
+.callus {
+  cursor: pointer;
+}
+.phone {
+  animation-name: phone;
+  color: white;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  border: 3px white dotted;
+  border-radius: 100%;
+  padding: 8px;
+}
+.phone-numbers {
+<<<<<<< HEAD
+  transition: 1.5s all;
+=======
+  transition: 2.5s all;
+>>>>>>> development
+  position: fixed;
+  left: -100vw;
+  opacity: 0;
+}
+.phone-numbers p a {
+  color: white;
+  border-bottom: 2px grey solid;
+}
+.phoneopen {
+  position: static;
+  opacity: 1;
+}
+@keyframes phone {
+  from {
+    color: white;
+  }
+  to {
+    color: rgba(25, 181, 254, 1);
+  }
+}
+@media (min-width: 600px) {
+  .header .main-detail .bottom {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 750px) {
+  .menu-icon {
+    display: none;
+  }
+  nav {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  nav img {
+    height: 120px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 0;
+  }
+  nav ul li {
+    margin: 8px;
+    font-size: 1.3rem;
+  }
+  nav ul .media {
+    display: none;
+  }
+  .header {
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .header .main-detail .top {
+    margin-bottom: -2rem;
+  }
+  .location {
+    width: 50vw;
+  }
+  footer {
+    display: block;
+  }
+  .slideshow-container {
+    width: 60vw;
+  }
+  .about img {
+    width: 60vw;
+  }
+}
+@media (min-width: 900px) {
+  .location {
+    width: 40vw;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1>NEW JK ROADWAYS</h1>
+      <ul>
+        <a href="./index.html">
+          <li><h1>Home</h1></li>
+        </a>
+        <a href="./about.html">
+          <li><h1>About Us</h1></li>
+        </a>
+        <a href="./services.html">
+          <li><h1>Services</h1></li>
+        </a>
+        <a href="#">
+          <li><h1>Contact Us</h1></li>
+        </a>
+      </ul>
+    </nav>
+    <!start of header section!>
+    <section class="header">
+      <div class="main"></div>
+      <h1 class="media-menu">New JK Roadways</h1>
+      <div class="main-detail">
+        <h3 class="top">Contact Information</h3>
+        <div class="bottom">
+          <p>
+            Email:
+            <a
+              style="color: white; border-bottom: 2px grey solid"
+              href="mailto:NEWJKROADWAYSARUJ@GMAIL.COM"
+            >
+              NEWJKROADWAYSARUJ@GMAIL.COM
+            </a>
+          </p>
+          <div>
+            <span class="callus">Call us <i class="fas fa-phone phone"></i> </span>
+            <div class="phone-numbers">
+              <p>Abdul Qayoom Sahab - <a href="tel:+917006716312"> +917006716312 </a></p>
+              <p>Manzoor Sahab - <a href="tel:+917006327173">+917006327173</a></p>
+              <p>Maqbool Sahab - <a href="tel:+919419011777">+919419011777</a></p>
+              <p>Aquib Sahab - <a href="tel:+917889312705">+917889312705</a></p>
+            </div>
+          </div>
+          <p>GSTIN: 01AAVPL7639P1ZV</p>
+          <p>
+            ADDRESS: E-10, TRANSPORT NAGAR, PARIMPORA, SRINAGAR,<br />
+            KASHMIR ( PIN CODE - 190017 )
+          </p>
+        </div>
+      </div>
+      <i id="bars" class="menu-icon fas fa-bars fa-3x"></i>
+    </section>
+    <! end of header sectiion!>
+    <h1 style="text-align: center; margin: 1rem">Location</h1>
+    <div class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26434.845960956136!2d74.755287!3d34.086026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e19b24f5cfe505%3A0x244894ea6f2fd423!2sNew%20JK%20Roadways!5e0!3m2!1sen!2sin!4v1629183686311!5m2!1sen!2sin"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <footer>
+      <div class="footer">
+        <h5>
+          ADDRESS: E-10, TRANSPORT NAGAR, PARIMPORA, SRINAGAR,
+          <p>KASHMIR ( PIN CODE - 190017 )</p>
+        </h5>
+        <h3>
+          New JK Roadways &copy; 2021
+          <p style="font-size: 12px">
+            Site Developed By: Imtiyaz Pukhta
+            <a
+              style="color: #341c09; border-bottom: 1px black solid"
+              href="https://pukhta2704.github.io/Portfolio/contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Developer</a
+            >
+          </p>
+        </h3>
+      </div>
+    </footer>
+    <script>
+      const menuIcon = document.getElementById('bars');
+      menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-times');
+        document.getElementById('navbar').classList.toggle('open');
+      });
+
+      var target = document.querySelector('.location');
+      var targetTwo = document.querySelector('.header');
+      document.addEventListener('scroll', () => {
+        if (window.scrollY >= target.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'black';
+        }
+        if (window.scrollY <= targetTwo.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'white';
+        }
+      });
+      const phoneIcon = document.querySelector('.callus');
+      phoneIcon.addEventListener('click', () => {
+        console.log('si');
+        document.querySelector('.phone-numbers').classList.toggle('phoneopen');
+      });
+    </script>
+  </body>
+</html>

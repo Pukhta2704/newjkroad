@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <h1>NEW JK ROADWAYS</h1>
+      <ul>
+        <a href="./index.html">
+          <li><h1>Home</h1></li>
+        </a>
+        <a href="#">
+          <li><h1>About Us</h1></li>
+        </a>
+        <a href="./services.html">
+          <li><h1>Services</h1></li>
+        </a>
+        <a href="./contact.html">
+          <li><h1>Contact Us</h1></li>
+        </a>
+      </ul>
+    </nav>
+    <!start of header section!>
+    <section class="header">
+      <div class="main"></div>
+      <h1 class="media-menu">New JK Roadways</h1>
+      <div class="main-detail">
+        <h3 class="top">NEW JK ROADWAYS</h3>
+        <div class="bottom">We provide buses, trucks and light motor vehicles for hiring.</div>
+      </div>
+      <i id="bars" class="menu-icon fas fa-bars fa-3x"></i>
+    </section>
+    <! end of header sectiion!>
+    <h1 id="about" style="text-align: center; margin-top: 1rem">About Us</h1>
+    <section class="about">
+      <img src="./images/annie-spratt-tG822f1XzT4-unsplash.jpg" alt="" />
+      <div class="text-custom">
+        <p>
+          <p>
+          We began as  regional company in 1996, a time when Jammu And Kashmir's transportation industry was in
+          its infancy. Over the years through our customer centric approach and our holistic
+          solution strategies we have established ourselves as one of the largest transport service
+          providers in the Jammu and Kashmir with over owned 80+ vehicles, 110+ strong people team
+          and 600+ affiliate vehicles.</p><br> <p>We’re leveraging all of this to serve a diverse and growing
+          set of clientele.Having served the people for over two and a half decades, we bring on board one of the
+          most experienced set of people in the business.</p><br><p> At New JK Roadways, people are a strategic
+          asset who bring rich and versatile understading of every aspect of the transport logistics
+          in India. With diverse skillsets including engineering, technology and geographical
+          expertise, we are geared to meet the most complex and challenging logistics needs for our
+          clients.</p>
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <h5>
+          ADDRESS: E-10, TRANSPORT NAGAR, PARIMPORA, SRINAGAR,
+          <p>KASHMIR ( PIN CODE - 190017 )</p>
+        </h5>
+        <h3>New JK Roadways &copy; 2021
+
+          <p style="font-size: 12px;">
+            Site Developed By: Imtiyaz Pukhta
+            <a
+              style="color: #341c09; border-bottom: 1px black solid"
+              href="https://pukhta2704.github.io/Portfolio/contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact Developer</a
+            >
+          </p>
+        </h3>
+      </div>
+    </footer>
+    <script>
+      const menuIcon = document.getElementById('bars');
+      menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-times');
+        document.getElementById('navbar').classList.toggle('open');
+      });
+      var target = document.querySelector('#about');
+      var targetTwo = document.querySelector('.header');
+      document.addEventListener('scroll', () => {
+        if (window.scrollY >= target.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'black';
+        }
+        if (window.scrollY <= targetTwo.getBoundingClientRect().top) {
+          document.querySelector('.menu-icon').style.color = 'white';
+        }
+      });
+    </script>
+  </body>
+</html>
