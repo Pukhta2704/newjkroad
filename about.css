@@ -147,6 +147,28 @@ nav ul li h1 {
   margin-top: 1rem;
   text-align: center;
 }
+.owner-info {
+  width: 100vw;
+  background: whitesmoke;
+}
+.owner-info .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 1rem;
+}
+.owner-info .container img {
+  width: 75%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+@media (min-width: 500px) {
+  .owner-info .container img {
+    width: 60%;
+  }
+}
 @media (min-width: 750px) {
   .menu-icon {
     display: none;
@@ -192,5 +214,13 @@ nav ul li h1 {
   }
   .about img {
     width: 60vw;
+  }
+  .owner-info .container img {
+    width: 40%;
+  }
+}
+@media (min-width: 950px) {
+  .owner-info .container img {
+    width: 30%;
   }
 }
