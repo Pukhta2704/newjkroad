@@ -138,7 +138,7 @@ nav ul li h1 {
 #slide {
   width: 100vw;
   background-color: whitesmoke;
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
 
 .mySlides {
