@@ -136,8 +136,9 @@ nav ul li h1 {
 /* Slideshow container */
 
 #slide {
-  width: 100%;
+  width: 100vw;
   background-color: whitesmoke;
+  margin: 0 1rem;
 }
 
 .mySlides {
@@ -145,9 +146,12 @@ nav ul li h1 {
 }
 
 .slideshow-container {
-  width: 1200px;
+  width: 70vw;
   position: relative;
   margin: auto;
+}
+.slideshow-container img {
+  width: 100%;
 }
 /* Next & previous buttons */
 .prev,
